@@ -73,9 +73,9 @@ cross_val_N<-function(dat,y,nfold=10,lambda1=0,ncpu=4,flds){
 
   }
   sfInit(parallel=T,cpus=ncpu)
-
+  sfLibrary(SnbClass)
   sfExport("dat")
-  sfSource("function_codes.R")
+  #sfSource("function_codes.R")
   #sfExport('lambd')
   sfExport('y')
   sfExport('flds')

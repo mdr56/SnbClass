@@ -19,7 +19,7 @@ Pred_function_N<-function(model,xte){
 
   Tesampfac<- NullModelTest1(ref=OUTPUT$ref,xte=xte,type='quantile')$sizeste
   datTe1=as.matrix(xte[,selA])
-  print(Tesampfac)
+ # print(Tesampfac)
   fitlab=c()
   scores<-matrix(,nrow=length(Tesampfac),ncol=K)
   for(l in 1:length(Tesampfac)){

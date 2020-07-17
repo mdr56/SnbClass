@@ -120,12 +120,12 @@ new_sBETA_hatNC=function(dat,y,lambda1,lambda2,clinical){
 
 
 
-    print(max_diff)
+ #   print(max_diff)
     ind_nc<-union(unique(which(abs(inialp-new_alp)>0.01,arr.ind=T)[,2]),unique(which(abs(inibet-new_bet)>0.01,arr.ind=T)[,2]))
-    print(ind_nc)
+#    print(ind_nc)
     if(max_diff<0.01){break}
-    print(max_diff)
-    print(iteration)
+ #   print(max_diff)
+#    print(iteration)
     iteration <- iteration + 1
     if(iteration==80){break}
     inialp=new_alp
